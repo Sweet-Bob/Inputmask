@@ -1592,7 +1592,7 @@
                         writeBuffer(npt, buffer);
                     }
                 }
-            } else if (npt.placeholder !== value) {
+            } else if (npt.placeholder !== value && opts.showMaskOnHover) {
                 npt.placeholder = value;
                 if (npt.placeholder === "") npt.removeAttribute("placeholder");
             }
